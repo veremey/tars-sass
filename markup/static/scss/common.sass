@@ -1,7 +1,5 @@
 // Common styles of the project
 
-// Common styles of the project
-
 html
 	+selection
 		background: rgba(0, 0, 0, .2)
@@ -11,8 +9,15 @@ html, body
 	height: 100%
 
 body
-	color: #000
+	color: $text
+	background-color: $body
 	+rr
+
+*
+	box-sizing: border-box
+	&:before,
+	&:after
+		box-sizing: inherit
 
 .page__wrapper
 	display: flex
@@ -24,6 +29,7 @@ body
 a
 	text-decoration: none
 	outline: none
+	color: inherit
 
 
 h1, h2, h3, h4, h5, h6
